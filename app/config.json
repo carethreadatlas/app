@@ -1,1 +1,16 @@
-{"slug": "carethreadatlas", "title": "CareThread Atlas", "description": "Follow the thread of a health record.", "attribution": "The record timeline runs on FinchNode."}
+{
+  "slug": "carethreadatlas",
+  "title": "CareThread Atlas",
+  "description": "Follow the thread of a health record.",
+  "attribution": "The record timeline runs on FinchNode.",
+  "categories": [
+    "demographics",
+    "medications",
+    "conditions",
+    "labs",
+    "vitals",
+    "allergies",
+    "immunizations",
+    "encounters"
+  ]
+}
