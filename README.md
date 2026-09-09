@@ -2,7 +2,7 @@
 
 Explore a personal health record timeline by category and chronology. CareThread Atlas keeps source fields and missing-record context within reach.
 
-**Site:** https://carethreadatlas.onrender.com/  
+**Site:** https://carethreadatlas.com/
 **Repository:** https://github.com/carethreadatlas/app
 
 ## Production integration
@@ -45,20 +45,20 @@ CSP `connect-src` must allow only `https://finchapps-connect.onrender.com`. Depl
 
 ## Privacy and verification
 
-Read [the data-handling notice](https://carethreadatlas.onrender.com/privacy.html). No clinical record is saved in browser storage; visible data is held in memory, cleared on hiding the page, and periodically revalidated. No browser agent tools expose medical data. Unit tests validate production envelopes and preserve source values. Backend tests cover origin/session isolation, scope checks, invalid environments, expiration and signed revocation without using real medical data.
+Read [the data-handling notice](https://carethreadatlas.com/privacy.html). No clinical record is saved in browser storage; visible data is held in memory, cleared on hiding the page, and periodically revalidated. No browser agent tools expose medical data. Unit tests validate production envelopes and preserve source values. Backend tests cover origin/session isolation, scope checks, invalid environments, expiration and signed revocation without using real medical data.
 
 A real patient must perform their own EHR authentication and consent; these tests do not claim successful patient connectivity. Availability varies by healthcare organization.
 
-## Domain candidate
+## Custom domain
 
-`carethreadatlas.com` was available on September 8, 2026; Porkbun displayed $11.08 for initial registration and renewal. No domain was purchased. Availability and price can change. Add it to Render and the backend's explicit origin allowlist before use.
+`carethreadatlas.com` is registered through Squarespace and assigned to this Render site. DNS uses an apex A record pointing to `216.24.57.1` and a `www` CNAME pointing to `carethreadatlas.onrender.com`. Render redirects `www` to the apex domain and manages HTTPS certificates.
 
 <!-- public-discovery -->
 ## Public guide and project context
 
-[Building a timeline without rewriting the record](https://carethreadatlas.onrender.com/guides/building-a-health-record-timeline.html) — A design journal about chronology, category filters and the difference between a recorded event and a complete history.
+[Building a timeline without rewriting the record](https://carethreadatlas.com/guides/building-a-health-record-timeline.html) — A design journal about chronology, category filters and the difference between a recorded event and a complete history.
 
-[Search CareThread Atlas guides](https://carethreadatlas.onrender.com/guides/) · [About the site](https://carethreadatlas.onrender.com/about.html) · [Sitemap](https://carethreadatlas.onrender.com/sitemap.xml)
+[Search CareThread Atlas guides](https://carethreadatlas.com/guides/) · [About the site](https://carethreadatlas.com/about.html) · [Sitemap](https://carethreadatlas.com/sitemap.xml)
 
 CareThread Atlas is a standalone product with its own interface, documentation and repository, prepared for independent business operation and continued development. Its FinchNode integration is documented in the code. Live production activation remains pending.
 
@@ -66,7 +66,7 @@ CareThread Atlas is a standalone product with its own interface, documentation a
 
 Edit `content/seo.json` for reviewed article text and site metadata. `npm run build` generates public HTML pages, a sitemap, social metadata and structured data, then prerenders the actual React homepage. `npm run test:seo` checks the built crawl surface after a build. Public guide search filters only public text in the browser; no patient data or search analytics enter the index.
 
-Keep canonical URLs on the deployed origin until a custom domain is registered and configured. Add only public, canonical pages to the sitemap. Validate links, mobile layout and the built HTML after editorial changes. Search engine indexing and rich results are not guaranteed.
+Keep canonical URLs on the custom domain configured in `content/seo.json`. Add only public, canonical pages to the sitemap. Validate links, mobile layout and the built HTML after editorial changes. Search engine indexing and rich results are not guaranteed.
 
 ## Independent business handoff
 

@@ -10,7 +10,7 @@
   "repositoryStatus": "public",
   "renderStatus": "live",
   "repository": "https://github.com/carethreadatlas/app",
-  "liveUrl": "https://carethreadatlas.onrender.com/",
+  "liveUrl": "https://carethreadatlas.com/",
   "homepage": "individually designed full website",
   "importRoute": "/#/import",
   "subject": "Health record timeline & clinical event explorer",
@@ -40,7 +40,7 @@
     ],
     [
       "The infrastructure chapter",
-      "CareThread Atlas uses a FinchNode-backed connection service. Authorization happens before record retrieval, and the timeline receives the categories granted to the visitor’s temporary session. FinchNode supplies the normalized record boundary; the atlas supplies category navigation and chronological presentation. The public code documents that separation."
+      "CareThread Atlas uses a FinchNode-backed connection service. Authorization happens before record retrieval, and the timeline receives the categories granted to the visitor\u2019s temporary session. FinchNode supplies the normalized record boundary; the atlas supplies category navigation and chronological presentation. The public code documents that separation."
     ],
     [
       "What is available today",
