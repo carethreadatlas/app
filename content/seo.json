@@ -40,7 +40,7 @@
     ],
     [
       "The infrastructure chapter",
-      "CareThread Atlas uses a FinchNode-backed connection service. Authorization happens before record retrieval, and the timeline receives the categories granted to the visitor\u2019s temporary session. FinchNode supplies the normalized record boundary; the atlas supplies category navigation and chronological presentation. The public code documents that separation."
+      "CareThread Atlas uses a FinchNode-backed connection service. Authorization happens before record retrieval, and the timeline receives the categories granted to the visitor’s temporary session. FinchNode supplies the normalized record boundary; the atlas supplies category navigation and chronological presentation. The public code documents that separation."
     ],
     [
       "What is available today",
@@ -51,5 +51,113 @@
     "FinchNode platform documentation",
     "https://finchnode.com/developers"
   ],
-  "googleVerification": "TMdY5YFKPrSoVv3fC5iyCopvPVAm9JPLyi2OVYoBrOk"
+  "googleVerification": "TMdY5YFKPrSoVv3fC5iyCopvPVAm9JPLyi2OVYoBrOk",
+  "guideIntro": "Follow a health-record timeline, understand date ordering and category filters, and investigate repeated entries without silently rewriting the history.",
+  "finchnodeContext": "CareThread Atlas uses FinchNode’s returned record categories as material for its timeline. Ordering, filtering and expansion belong to the Atlas interface; the timeline does not manufacture missing events or decide that similar entries are duplicates.",
+  "articles": [
+    {
+      "slug": "organize-a-health-record-timeline",
+      "title": "How to organize a health-record timeline in CareThread Atlas",
+      "description": "Filter health-record events by category, change chronological order and inspect the fields behind each timeline entry.",
+      "published": "2026-09-09",
+      "sections": [
+        {
+          "heading": "Choose a view of the question you are exploring",
+          "paragraphs": [
+            "Start with all events to see the available record categories. Then use a category filter to focus the display on the type of entry you want to inspect. Filtering changes the visible timeline; it does not delete records or request new information from the source."
+          ]
+        },
+        {
+          "heading": "Check the order before reading a sequence",
+          "paragraphs": [
+            "The ordering control switches between newest-first and oldest-first views. The app uses the date available on each resource. A recorded clinical date, a result date and the time something arrived in the app are not interchangeable concepts."
+          ],
+          "items": [
+            "Check which category filter is selected.",
+            "Confirm the direction of the date order.",
+            "Read the source label and record ID for a relevant event.",
+            "Expand the entry before drawing a conclusion from its position."
+          ]
+        },
+        {
+          "heading": "Inspect entries that lack a useful date",
+          "paragraphs": [
+            "An undated entry cannot establish its place in a clinical sequence just because the interface must place it somewhere. In the implementation, missing or unparseable dates use a fallback sort value. Look at the expanded object and treat the chronological position of such entries cautiously."
+          ]
+        },
+        {
+          "heading": "Use the timeline as an organizing view",
+          "paragraphs": [
+            "The expanded entry exposes the original fields returned to this app. The timeline does not edit a provider’s chart, identify causes, or fill gaps in the history. Live record connections still await activation; the public guide explains the implemented navigation."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Does changing the sort order update my records?",
+          "answer": "No. It rearranges the visible entries only."
+        },
+        {
+          "question": "Why is an undated record at an edge of the timeline?",
+          "answer": "Entries without a parseable date use a fallback sort value. Their screen position should not be read as a confirmed event date."
+        }
+      ],
+      "references": [
+        {
+          "label": "CareThread Atlas interface implementation",
+          "url": "https://github.com/carethreadatlas/app/blob/main/app/view.tsx"
+        }
+      ]
+    },
+    {
+      "slug": "similar-records-in-a-health-timeline",
+      "title": "Why similar entries remain separate in a health timeline",
+      "description": "Learn how CareThread Atlas preserves record IDs and source context instead of automatically merging similar-looking events.",
+      "published": "2026-09-09",
+      "sections": [
+        {
+          "heading": "Similar wording can describe different records",
+          "paragraphs": [
+            "Two entries can have similar labels while differing in category, date, status or source. The timeline preserves the returned entries so that a reader can inspect those differences. It does not collapse them merely because the titles look alike."
+          ]
+        },
+        {
+          "heading": "Inspect identity before calling something a duplicate",
+          "paragraphs": [
+            "Open each event and compare its supplied fields. The displayed ID and source label provide a starting point; the expanded JSON provides more context. If the entries remain unclear, preserve the uncertainty rather than assuming that one can be discarded."
+          ]
+        },
+        {
+          "heading": "Presentation is not reconciliation",
+          "paragraphs": [
+            "Sorting and filtering make a record easier to navigate. Deciding that two entries represent one clinical event is a different task with different evidence requirements. CareThread Atlas currently implements the navigation task and leaves source entries intact."
+          ]
+        },
+        {
+          "heading": "Design a future merge feature with traceability",
+          "paragraphs": [
+            "An operator adding a merged view should retain access to every contributing entry and explain the matching rule. Ambiguous cases need a visible outcome. The current source implementation does not provide automatic deduplication, and these notes are not a claim that a reconciliation feature already exists."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Does CareThread Atlas remove repeated-looking records?",
+          "answer": "No. It retains separate returned entries so their source fields can be inspected."
+        }
+      ],
+      "finchnode": {
+        "heading": "FinchNode provides categories; Atlas preserves the trail",
+        "text": "CareThread Atlas builds its timeline from the authorized categories returned through FinchNode. The product adds a category label for navigation and a chronological view while keeping the supplied record fields inspectable. That separation matters when two entries appear to describe the same thing.",
+        "label": "FinchNode’s normalized record API",
+        "url": "https://finchnode.com/ehr-integration-api"
+      },
+      "references": [
+        {
+          "label": "CareThread Atlas interface implementation",
+          "url": "https://github.com/carethreadatlas/app/blob/main/app/view.tsx"
+        }
+      ]
+    }
+  ]
 }

@@ -71,3 +71,10 @@ Keep canonical URLs on the custom domain configured in `content/seo.json`. Add o
 ## Independent business handoff
 
 [Business handoff](HANDOFF.md) covers product identity, the receiving business’s production setup, domain migration, search verification and ongoing editorial maintenance.
+
+## More product guides
+
+Follow a health-record timeline, understand date ordering and category filters, and investigate repeated entries without silently rewriting the history.
+
+- [How to organize a health-record timeline in CareThread Atlas](https://carethreadatlas.com/guides/organize-a-health-record-timeline.html) — Filter health-record events by category, change chronological order and inspect the fields behind each timeline entry.
+- [Why similar entries remain separate in a health timeline](https://carethreadatlas.com/guides/similar-records-in-a-health-timeline.html) — Learn how CareThread Atlas preserves record IDs and source context instead of automatically merging similar-looking events.
