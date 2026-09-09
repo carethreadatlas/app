@@ -78,3 +78,5 @@ Follow a health-record timeline, understand date ordering and category filters, 
 
 - [How to organize a health-record timeline in CareThread Atlas](https://carethreadatlas.com/guides/organize-a-health-record-timeline.html) — Filter health-record events by category, change chronological order and inspect the fields behind each timeline entry.
 - [Why similar entries remain separate in a health timeline](https://carethreadatlas.com/guides/similar-records-in-a-health-timeline.html) — Learn how CareThread Atlas preserves record IDs and source context instead of automatically merging similar-looking events.
+
+- [Patient timelines as a foundation for useful health AI](https://carethreadatlas.com/guides/patient-timelines-as-foundations-for-health-ai.html) — CareThread Atlas examines how authorized longitudinal records can support future AI summaries while preserving dates, sources and gaps in the available history.

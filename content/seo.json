@@ -158,6 +158,86 @@
           "url": "https://github.com/carethreadatlas/app/blob/main/app/view.tsx"
         }
       ]
+    },
+    {
+      "slug": "patient-timelines-as-foundations-for-health-ai",
+      "title": "Patient timelines as a foundation for useful health AI",
+      "description": "CareThread Atlas examines how authorized longitudinal records can support future AI summaries while preserving dates, sources and gaps in the available history.",
+      "published": "2026-09-09",
+      "theme": "data-ai",
+      "sections": [
+        {
+          "heading": "Health questions often span more than one entry",
+          "paragraphs": [
+            "A person preparing to review their history may need to navigate conditions, observations, medications and encounters spread across time. A startup that sees only one isolated entry can miss the context needed even to organize the right questions. Authorized longitudinal data can make that context available, provided the interface preserves what each source actually supplied.",
+            "CareThread Atlas turns returned categories into a filterable timeline. The current product supplies navigation and expandable fields; it does not generate an account of what caused an event or reconcile the record into a single authoritative story."
+          ]
+        },
+        {
+          "heading": "The useful AI idea is an evidence-linked draft",
+          "paragraphs": [
+            "A future assistant might draft a chronological outline, retrieve entries connected to a user’s question or group candidate discussion topics. A reader should be able to open the entries supporting each statement. That is a different design goal from producing a plausible narrative that cannot be checked.",
+            "WHO’s guidance points to opportunities for summarizing health information alongside risks from false, biased or incomplete statements. For a timeline product, that makes traceability a practical requirement for evaluating a proposed feature."
+          ],
+          "links": [
+            {
+              "label": "WHO guidance on generative AI applications and limitations",
+              "url": "https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models"
+            }
+          ]
+        },
+        {
+          "heading": "Dates can mislead a model as easily as a reader",
+          "paragraphs": [
+            "A missing date does not become a known event date because software must place an item somewhere. Similar labels do not prove that two records describe the same event. A future summarizer needs access to those uncertainties, rather than receiving a flattened story in which every item appears equally certain."
+          ],
+          "items": [
+            "Retain source IDs with any summary evidence.",
+            "Distinguish recorded event dates from import or sync times.",
+            "Keep undated entries visibly unresolved.",
+            "Treat repeated-looking entries as candidates for inspection, not automatic duplicates."
+          ]
+        },
+        {
+          "heading": "The connection choice behind the timeline",
+          "paragraphs": [
+            "CareThread Atlas uses FinchNode to obtain the authorized record categories its timeline can display. Its own code adds category navigation and chronological ordering while leaving the returned fields inspectable. That gives a future AI feature an explicit boundary between retrieved evidence and newly generated language.",
+            "Current patient connection activation is still pending, and the application does not run an AI summarizer. A new operator adding one would need to decide its scope, disclosures, data handling and evaluation before enabling it."
+          ],
+          "links": [
+            {
+              "label": "CareThread Atlas timeline implementation",
+              "url": "https://github.com/carethreadatlas/app/blob/main/app/view.tsx"
+            },
+            {
+              "label": "FinchNode patient-authorized access",
+              "url": "https://finchnode.com/"
+            }
+          ]
+        },
+        {
+          "heading": "Access and training are different decisions",
+          "paragraphs": [
+            "Using authorized information for a visitor’s current task is not the same as retaining it for a training corpus. A startup should state which job the data serves and what happens when access ends. The opportunity is a more useful, inspectable experience for the person who shared the record, rather than an undefined accumulation of patient data."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Does CareThread Atlas currently write AI summaries?",
+          "answer": "No. It filters, sorts and expands returned records. AI-supported outlines are a possible future direction described here."
+        },
+        {
+          "question": "Can the timeline prove why an event happened?",
+          "answer": "No. Chronological ordering alone does not establish a causal relationship between clinical events."
+        }
+      ],
+      "references": [
+        {
+          "label": "CareThread Atlas public source repository",
+          "url": "https://github.com/carethreadatlas/app"
+        }
+      ]
     }
   ]
 }
