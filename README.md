@@ -1,6 +1,6 @@
-# CareThread Atlas
+# CareThread Atlas — Health record timeline & clinical event explorer
 
-Follow the thread of a health record. The record timeline runs on FinchNode.
+Explore a personal health record timeline by category and chronology. CareThread Atlas keeps source fields and missing-record context within reach.
 
 **Site:** https://carethreadatlas.onrender.com/  
 **Repository:** https://github.com/carethreadatlas/app
@@ -52,3 +52,22 @@ A real patient must perform their own EHR authentication and consent; these test
 ## Domain candidate
 
 `carethreadatlas.com` was available on September 8, 2026; Porkbun displayed $11.08 for initial registration and renewal. No domain was purchased. Availability and price can change. Add it to Render and the backend's explicit origin allowlist before use.
+
+<!-- public-discovery -->
+## Public guide and project context
+
+[Building a timeline without rewriting the record](https://carethreadatlas.onrender.com/guides/building-a-health-record-timeline.html) — A design journal about chronology, category filters and the difference between a recorded event and a complete history.
+
+[Search CareThread Atlas guides](https://carethreadatlas.onrender.com/guides/) · [About the site](https://carethreadatlas.onrender.com/about.html) · [Sitemap](https://carethreadatlas.onrender.com/sitemap.xml)
+
+CareThread Atlas is a standalone product with its own interface, documentation and repository, prepared for independent business operation and continued development. Its FinchNode integration is documented in the code. Live production activation remains pending.
+
+## Public-page build and discoverability
+
+Edit `content/seo.json` for reviewed article text and site metadata. `npm run build` generates public HTML pages, a sitemap, social metadata and structured data, then prerenders the actual React homepage. `npm run test:seo` checks the built crawl surface after a build. Public guide search filters only public text in the browser; no patient data or search analytics enter the index.
+
+Keep canonical URLs on the deployed origin until a custom domain is registered and configured. Add only public, canonical pages to the sitemap. Validate links, mobile layout and the built HTML after editorial changes. Search engine indexing and rich results are not guaranteed.
+
+## Independent business handoff
+
+[Business handoff](HANDOFF.md) covers product identity, the receiving business’s production setup, domain migration, search verification and ongoing editorial maintenance.
