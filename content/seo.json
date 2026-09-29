@@ -238,6 +238,343 @@
           "url": "https://github.com/carethreadatlas/app"
         }
       ]
+    },
+    {
+      "slug": "best-ehrs-for-small-clinics",
+      "title": "Best EHRs for small clinics in 2026: a ranked shortlist",
+      "description": "Seven EHRs ranked for independent clinics with one to ten clinicians, compared on published pricing, billing, e-prescribing and AI documentation, plus specialty picks.",
+      "published": "2026-09-28",
+      "kind": "industry",
+      "theme": "industry",
+      "sections": [
+        {
+          "heading": "How this shortlist was put together",
+          "paragraphs": [
+            "An EHR for a small clinic has to do more than store notes. It usually carries scheduling, e-prescribing, claims, a patient portal and, increasingly, AI documentation. Switching later is expensive, so the most useful comparison is fit: who each system is designed for and what it costs to find out.",
+            "We reviewed each vendor’s own product, pricing and certification pages on September 28, 2026, alongside the 2026 Best in KLAS results for independent practices with one to ten physicians. We did not run hands-on trials. Prices are quoted only where a vendor publishes them; “quote only” means you will need a sales call."
+          ],
+          "links": [
+            {
+              "label": "2026 Best in KLAS: Small Practice Ambulatory EHR/PM",
+              "url": "https://klasresearch.com/best-in-klas-ranking/small-practice-ambulatory-ehr-pm-1-10-physicians-independent/2026/314-50"
+            }
+          ]
+        },
+        {
+          "heading": "The ranking at a glance",
+          "paragraphs": [
+            "The order reflects a general independent primary care or multispecialty clinic. Specialty and cash-pay practices should read the later section before deciding."
+          ],
+          "table": {
+            "caption": "Seven EHRs for small clinics, ranked",
+            "columns": [
+              "Rank and EHR",
+              "Best for",
+              "Published price",
+              "AI documentation"
+            ],
+            "rows": [
+              [
+                "1. Elation Health",
+                "Independent primary care",
+                "Quote only",
+                "Note Assist AI"
+              ],
+              [
+                "2. athenaOne",
+                "Clinics that want billing handled closely with the EHR",
+                "Quote only",
+                "athenaAmbient, included"
+              ],
+              [
+                "3. eClinicalWorks",
+                "Practices that want a transparent monthly price",
+                "$499 per provider per month (EHR only)",
+                "Sunoh.ai add-on"
+              ],
+              [
+                "4. Tebra",
+                "Practices of 1–10 providers that want marketing tools too",
+                "Quote only",
+                "Included in the All in One plan"
+              ],
+              [
+                "5. CharmHealth",
+                "Very small or part-time practices on a tight budget",
+                "Free plan; $200 per provider per month",
+                "AI Scribe add-on"
+              ],
+              [
+                "6. DrChrono by EverHealth",
+                "Practices that want tiered bundles",
+                "Quote only",
+                "EverHealth Scribe (included in Premium)"
+              ],
+              [
+                "7. Practice Fusion",
+                "Low-complexity charting with e-prescribing",
+                "Quote only; 14-day trial",
+                "Not advertised"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "1. Elation Health — best overall for independent primary care",
+          "paragraphs": [
+            "Elation is built around independent primary care, including direct primary care and pediatrics, and says more than 50,000 clinical users work in it. It won the 2026 Best in KLAS award for small-practice ambulatory EHR and practice management, its second consecutive year, with a score of 81.7.",
+            "Its pricing page lists Note Assist AI, a patient portal, telehealth and billing, but pricing is tailored. In June 2026 Elation acquired Aster, an AI-native women’s-health EHR, so expect its specialty features to widen."
+          ],
+          "links": [
+            {
+              "label": "Elation: 2026 Best in KLAS",
+              "url": "https://www.elationhealth.com/resources/media-articles-elation-health-ehr/klas-award-2026"
+            },
+            {
+              "label": "Elation pricing",
+              "url": "https://www.elationhealth.com/pricing/"
+            },
+            {
+              "label": "Elation acquires Aster",
+              "url": "https://www.elationhealth.com/resources/media-articles-elation-health-ehr/aster"
+            }
+          ]
+        },
+        {
+          "heading": "2. athenaOne — strongest for revenue-cycle support",
+          "paragraphs": [
+            "athenaOne combines a cloud EHR with practice management and billing services, and athenahealth’s collector product won the 2026 KLAS category for independent practice management. In August 2026 athenahealth made athenaAmbient, its built-in ambient documentation, broadly available at no additional charge to athenaOne customers.",
+            "We could not confirm current pricing from athenahealth’s site, so budget for a quote. The main reason to choose it is having billing and documentation run by the same vendor."
+          ],
+          "links": [
+            {
+              "label": "athenaAmbient availability (HIT Consultant)",
+              "url": "https://hitconsultant.net/2026/08/13/athenahealth-launches-native-ai-ambient-capabilities-athenaone/"
+            }
+          ]
+        },
+        {
+          "heading": "3. eClinicalWorks — the clearest published price",
+          "paragraphs": [
+            "eClinicalWorks publishes its prices: $499 per provider per month for the EHR, $599 with practice management, or revenue-cycle management as a service at 2.9% of collections. It lists no start-up costs and includes training for practices of one to nine providers, along with e-prescribing, a patient portal and cloud hosting.",
+            "Its ambient scribe, Sunoh.ai, is sold separately; the Sunoh pricing page listed a limited-time price of $149 per user per month against a regular $199."
+          ],
+          "links": [
+            {
+              "label": "eClinicalWorks pricing",
+              "url": "https://www.eclinicalworks.com/products-services/pricing/"
+            },
+            {
+              "label": "Sunoh.ai pricing",
+              "url": "https://www.sunoh.ai/pricing"
+            }
+          ]
+        },
+        {
+          "heading": "4. Tebra — practice growth tools alongside the chart",
+          "paragraphs": [
+            "Tebra, formed from Kareo and PatientPop, says it is purpose-built for independent practices with one to ten providers. Its EHR+ and All in One plans include e-prescribing with PDMP and EPCS support, billing, a portal and telehealth; All in One adds AI, online scheduling, review management and websites.",
+            "Pricing is quote only. Tebra raised $250 million in December 2025 to fund AI development, which suggests AI features will keep changing through 2026."
+          ],
+          "links": [
+            {
+              "label": "Tebra certified EHR",
+              "url": "https://www.tebra.com/ehr-software/certified-ehr-technology"
+            },
+            {
+              "label": "Tebra plans",
+              "url": "https://www.tebra.com/pricing/"
+            },
+            {
+              "label": "Tebra funding announcement",
+              "url": "https://www.tebra.com/press-release/private-practice-platform-tebra-secures-250m-to-accelerate-ai-innovation"
+            }
+          ]
+        },
+        {
+          "heading": "5. CharmHealth — the lowest-cost way to start",
+          "paragraphs": [
+            "CharmHealth has a free plan capped at 50 encounters a month, without e-prescribing or telehealth. Beyond that, you can pay $0.50 per encounter with a $25 monthly minimum, or $200 per provider per month.",
+            "Add-ons are priced individually: e-prescribing at $15 per provider per month, EPCS from $250 per provider per year, telehealth at $20 per provider per month and an AI scribe at $125 per provider per month or $2 per encounter. Add up the modules you need before comparing it with bundled systems."
+          ],
+          "links": [
+            {
+              "label": "CharmHealth US pricing",
+              "url": "https://www.charmhealth.com/ehr/ehr-pricing-us.html"
+            }
+          ]
+        },
+        {
+          "heading": "6. DrChrono by EverHealth — tiered bundles",
+          "paragraphs": [
+            "DrChrono now sits within EverHealth and sells three quote-only tiers: Foundation, Growth and Premium. Its EverHealth Scribe is included in Premium and available as an add-on in the other tiers. Its ONC certification page lists DrChrono EHR version 11."
+          ],
+          "links": [
+            {
+              "label": "DrChrono pricing",
+              "url": "https://www.drchrono.com/pricing/"
+            },
+            {
+              "label": "DrChrono ONC certification",
+              "url": "https://www.drchrono.com/meaningful-use-ehr/"
+            }
+          ]
+        },
+        {
+          "heading": "7. Practice Fusion — simple charting, with a watch item",
+          "paragraphs": [
+            "Veradigm still markets Practice Fusion to small and independent practices with e-prescribing, EPCS, billing and a free patient portal, and offers a 14-day trial. Its product page does not advertise AI documentation.",
+            "Veradigm announced a company-wide turnaround plan in September 2026. No change to Practice Fusion has been announced, but ask about the product roadmap and contract exit terms."
+          ],
+          "links": [
+            {
+              "label": "Practice Fusion EHR",
+              "url": "https://veradigm.com/practice-fusion-ehr/"
+            },
+            {
+              "label": "Practice Fusion ONC certification",
+              "url": "https://www.practicefusion.com/onc-certified-ehr/"
+            }
+          ]
+        },
+        {
+          "heading": "Specialty, cash-pay and larger-group picks",
+          "paragraphs": [
+            "A general ranking does not fit every clinic. These systems are designed for narrower practice types."
+          ],
+          "table": {
+            "caption": "EHRs for specific practice types",
+            "columns": [
+              "EHR",
+              "Designed for",
+              "Published starting price",
+              "Note"
+            ],
+            "rows": [
+              [
+                "SimplePractice",
+                "Therapists and behavioral health",
+                "$49 per month (Starter)",
+                "AI transcripts are retained in de-identified form by default for new users since June 2026; review the setting"
+              ],
+              [
+                "Healthie",
+                "Virtual-first, nutrition and wellness practices",
+                "$19 per month (Core, 10 active clients)",
+                "E-prescribing is a $40 per clinician add-on"
+              ],
+              [
+                "OptiMantra",
+                "Integrative, wellness and direct primary care",
+                "$99 per month for the first practitioner",
+                "E-prescribing with EPCS is $38 per month"
+              ],
+              [
+                "Cerbo",
+                "Functional medicine and cash-based clinics",
+                "$281 per prescribing provider per month",
+                "$1,195 setup"
+              ],
+              [
+                "Akute Health",
+                "Direct primary care and concierge",
+                "$300 per month (1 clinician, 100 patients)",
+                "Billing through an optional add-on"
+              ],
+              [
+                "Canvas Medical",
+                "Care-delivery startups building custom workflows",
+                "$4,000 per month (Builder)",
+                "Two-year contracts"
+              ],
+              [
+                "Epic Garden Plot",
+                "Independent groups",
+                "Quote only",
+                "Designed for groups with more than 40 providers"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "SimplePractice pricing",
+              "url": "https://www.simplepractice.com/pricing/"
+            },
+            {
+              "label": "SimplePractice transcript default (Clear Health Costs)",
+              "url": "https://clearhealthcosts.com/blog/2026/07/therapy-company-simplepractice-adds-ai-transcripts-by-default/"
+            },
+            {
+              "label": "Healthie pricing",
+              "url": "https://www.gethealthie.com/pricing"
+            },
+            {
+              "label": "OptiMantra pricing",
+              "url": "https://www.optimantra.com/pricing"
+            },
+            {
+              "label": "Cerbo pricing",
+              "url": "https://www.cer.bo/pricing"
+            },
+            {
+              "label": "Akute pricing",
+              "url": "https://www.akutehealth.com/pricing"
+            },
+            {
+              "label": "Canvas pricing",
+              "url": "https://www.canvasmedical.com/pricing"
+            },
+            {
+              "label": "Epic Garden Plot",
+              "url": "https://www.epic.com/epic/post/epic-launches-garden-plot-a-shared-environment-where-independent-medical-groups-can-grow/"
+            }
+          ]
+        },
+        {
+          "heading": "Questions to ask in every demo",
+          "paragraphs": [
+            "Sales demos show the best path through a product. These questions surface the costs and constraints that usually appear later."
+          ],
+          "items": [
+            "Which version is ONC-certified today? Check the listing yourself on the Certified Health IT Product List.",
+            "How do we export all of our data if we leave, in what format, and at what cost?",
+            "Is EPCS included, and does e-prescribing cover every prescriber or cost extra per person?",
+            "Which clearinghouse and labs are included, and which cost extra per month?",
+            "Where is AI-drafted text stored, can we switch it off, and is it covered by the business associate agreement?",
+            "What is the contract term, the renewal notice period and the cost of migrating historical charts?"
+          ],
+          "links": [
+            {
+              "label": "ONC Certified Health IT Product List",
+              "url": "https://chpl.healthit.gov/"
+            }
+          ]
+        },
+        {
+          "heading": "When the EHR does not cover a workflow",
+          "paragraphs": [
+            "Small clinics often find gaps around the chart: a custom intake form, a post-procedure check-in or a program-specific tracker. Before adding a separate tool, ask whether your EHR vendor’s marketplace already offers it.",
+            "If you build something yourself, choose a platform that will sign a business associate agreement for patient information. Several popular AI app builders prohibit protected health information in their terms. Healthcare-focused options include Blaze, Knack Health and Caspio’s HIPAA Edition, and Panaceum, which generates HIPAA apps from a plain-language description and is currently in early access."
+          ],
+          "links": [
+            {
+              "label": "Panaceum",
+              "url": "https://panaceum.app/"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Which EHR is cheapest for a solo practice?",
+          "answer": "Among published prices, CharmHealth’s free and per-encounter plans have the lowest entry cost, and Healthie starts at $19 a month for virtual-first practices. Add the modules you need, such as e-prescribing and billing, before comparing totals."
+        },
+        {
+          "question": "Is the KLAS winner the right EHR for every small clinic?",
+          "answer": "No. KLAS reflects customer feedback within a segment. A therapy practice, a cash-pay clinic or a surgical specialty may be better served by a system designed for that workflow."
+        }
+      ],
+      "editorialNote": "How we ranked: vendor product, pricing and certification pages reviewed on September 28, 2026, and the 2026 Best in KLAS results. No hands-on product trials were run."
     }
   ]
 }

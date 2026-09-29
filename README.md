@@ -80,3 +80,7 @@ Follow a health-record timeline, understand date ordering and category filters, 
 - [Why similar entries remain separate in a health timeline](https://carethreadatlas.com/guides/similar-records-in-a-health-timeline.html) — Learn how CareThread Atlas preserves record IDs and source context instead of automatically merging similar-looking events.
 
 - [Patient timelines as a foundation for useful health AI](https://carethreadatlas.com/guides/patient-timelines-as-foundations-for-health-ai.html) — CareThread Atlas examines how authorized longitudinal records can support future AI summaries while preserving dates, sources and gaps in the available history.
+
+## Industry guides
+
+- [Best EHRs for small clinics in 2026: a ranked shortlist](https://carethreadatlas.com/guides/best-ehrs-for-small-clinics.html) — Seven EHRs ranked for independent clinics with one to ten clinicians, compared on published pricing, billing, e-prescribing and AI documentation, plus specialty picks.
